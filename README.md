@@ -4,21 +4,25 @@ The `DataCleaner` library provides a straightforward and efficient way to clean 
 
 Step 1: Installation
 Before using the library, you need to install it. If you have cloned the repository, you can install it using `pip`.
+
 `git clone https://github.com/jayesh2039/datacleaner.git`
 `cd datacleaner`
 `pip install .`
 
 Alternatively, if the library is available on PyPI, you can install it directly from there:
-pip install datacleaner
+
+`pip install datacleaner`
 
 Step 2: Import the Library
 After installation, you need to import the DataCleaner class from the library in your Python script.
-import logging
-from datacleaner import DataCleaner
+
+`import logging`
+`from datacleaner import DataCleaner`
 
 Step 3: Set Up Logging
 To monitor the library's operations, set up logging. This will help you see informative messages about the data cleaning process.
-logging.basicConfig(level=logging.INFO)
+
+`logging.basicConfig(level=logging.INFO)`
 
 Step 4: Initialize the `DataCleaner`
 Create an instance of the DataCleaner class by providing the path to your CSV file. Optionally, you can also specify the cleaning parameters (`drop_thresh`, `fill_methods`, and `nan_col_thresh`).
