@@ -25,9 +25,11 @@ To monitor the library's operations, set up logging. This will help you see info
 `logging.basicConfig(level=logging.INFO)`
 
 Step 4: Initialize the `DataCleaner`
+
 Create an instance of the DataCleaner class by providing the path to your CSV file. Optionally, you can also specify the cleaning parameters (`drop_thresh`, `fill_methods`, and `nan_col_thresh`).
-file_path = 'your_data.csv'
-cleaner = DataCleaner(file_path)
+
+`file_path = 'your_data.csv'
+cleaner = DataCleaner(file_path)`
 
 Step 5: Summarize the Data Before Cleaning
 To understand the state of your data before cleaning, use the `summarize()` method. This will print a summary of the DataFrame, including its shape, the number of missing values, data types, and the first few rows.
