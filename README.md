@@ -2,6 +2,9 @@
 
 The `DataCleaner` library provides a straightforward and efficient way to clean CSV data by handling missing values and duplicates. Below is a step-by-step guide to help you understand how to use this library effectively.
 
+`DataCleaner` is a Python library designed to clean data in CSV files by handling NaN values and duplicates. This library provides a convenient way to preprocess and clean your datasets for further analysis or machine learning tasks.
+
+
 Step 1: Installation
 Before using the library, you need to install it. If you have cloned the repository, you can install it using `pip`.
 
@@ -58,6 +61,15 @@ Finally, save the cleaned DataFrame to a new CSV file using the `save()` method.
 `output_path = 'cleaned_data.csv'`
 
 `cleaner.save(output_path)`
+
+# Features
+
+- Drop rows where all values are NaN.
+- Drop rows with a specified number of NaN values.
+- Fill NaN values with specified methods (e.g., forward fill, backward fill).
+- Drop columns with a high percentage of NaN values.
+- Drop duplicate rows.
+- Provide a summary of the DataFrame before and after cleaning.
 
 # Full Example
 
