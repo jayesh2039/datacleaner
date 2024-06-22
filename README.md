@@ -28,31 +28,37 @@ Step 4: Initialize the `DataCleaner`
 
 Create an instance of the DataCleaner class by providing the path to your CSV file. Optionally, you can also specify the cleaning parameters (`drop_thresh`, `fill_methods`, and `nan_col_thresh`).
 
-`file_path = 'your_data.csv'
-cleaner = DataCleaner(file_path)`
+`file_path = 'your_data.csv'`
+`cleaner = DataCleaner(file_path)`
 
 Step 5: Summarize the Data Before Cleaning
 To understand the state of your data before cleaning, use the `summarize()` method. This will print a summary of the DataFrame, including its shape, the number of missing values, data types, and the first few rows.
-cleaner.summarize()
+
+`cleaner.summarize()`
 
 Step 6: Clean the Data
 Use the `clean_data()` method to perform the cleaning operations. This method will drop rows and columns based on the specified thresholds, fill NaN values, and remove duplicates.
-cleaner.clean_data()
+
+`cleaner.clean_data()`
 
 Step 7: Summarize the Data After Cleaning
+
 After cleaning, summarize the data again to see the changes made during the cleaning process.
-cleaner.summarize()
+
+`cleaner.summarize()`
 
 Step 8: Save the Cleaned Data
+
 Finally, save the cleaned DataFrame to a new CSV file using the `save()` method.
-output_path = 'cleaned_data.csv'
-cleaner.save(output_path)
+
+`output_path = 'cleaned_data.csv'`
+`cleaner.save(output_path)`
 
 #Full Example
 
 Here's the complete code to illustrate the steps above:
 
-import logging
+`import logging
 
 from datacleaner import DataCleaner
 
@@ -70,6 +76,6 @@ cleaner.clean_data()
 
 cleaner.summarize()
 
-cleaner.save(output_path)
+cleaner.save(output_path)`
 
 
