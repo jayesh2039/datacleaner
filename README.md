@@ -59,7 +59,7 @@ Finally, save the cleaned DataFrame to a new CSV file using the `save()` method.
 
 `cleaner.save(output_path)`
 
-#Full Example
+# Full Example
 
 Here's the complete code to illustrate the steps above:
 
