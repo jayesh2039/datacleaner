@@ -4,9 +4,9 @@ The `DataCleaner` library provides a straightforward and efficient way to clean 
 
 Step 1: Installation
 Before using the library, you need to install it. If you have cloned the repository, you can install it using `pip`.
-git clone https://github.com/jayesh2039/datacleaner.git
-cd datacleaner
-pip install .
+`git clone https://github.com/jayesh2039/datacleaner.git`
+`cd datacleaner`
+`pip install .`
 
 Alternatively, if the library is available on PyPI, you can install it directly from there:
 pip install datacleaner
