@@ -44,10 +44,10 @@ cleaner.save(output_path)
 
 #Full Example
 Here's the complete code to illustrate the steps above:
-import logging
-from datacleaner import DataCleaner
-logging.basicConfig(level=logging.INFO)
-file_path = 'your_data.csv'
+import logging\n
+from datacleaner import DataCleaner\n
+logging.basicConfig(level=logging.INFO)\n
+file_path = 'your_data.csv'\n
 output_path = 'cleaned_data.csv'
 cleaner = DataCleaner(file_path)
 cleaner.summarize()
