@@ -4,7 +4,7 @@ The `DataCleaner` library provides a straightforward and efficient way to clean 
 
 Step 1: Installation
 Before using the library, you need to install it. If you have cloned the repository, you can install it using `pip`.
-git clone https://github.com/yourusername/datacleaner.git
+git clone https://github.com/jayesh2039/datacleaner.git
 cd datacleaner
 pip install .
 
@@ -42,30 +42,16 @@ Finally, save the cleaned DataFrame to a new CSV file using the `save()` method.
 output_path = 'cleaned_data.csv'
 cleaner.save(output_path)
 
-Full Example
+#Full Example
 Here's the complete code to illustrate the steps above:
 import logging
 from datacleaner import DataCleaner
-
-# Setup logging
 logging.basicConfig(level=logging.INFO)
-
-# File paths
 file_path = 'your_data.csv'
 output_path = 'cleaned_data.csv'
-
-# Create a DataCleaner instance
 cleaner = DataCleaner(file_path)
-
-# Summarize the data before cleaning
 cleaner.summarize()
-
-# Clean the data with default parameters
 cleaner.clean_data()
-
-# Summarize the data after cleaning
 cleaner.summarize()
-
-# Save the cleaned data to a new CSV file
 cleaner.save(output_path)
 
