@@ -63,24 +63,24 @@ Finally, save the cleaned DataFrame to a new CSV file using the `save()` method.
 
 Here's the complete code to illustrate the steps above:
 
-`import logging
+`import logging`
 
-from datacleaner import DataCleaner
+`from datacleaner import DataCleaner`
 
-logging.basicConfig(level=logging.INFO)
+`logging.basicConfig(level=logging.INFO)`
 
-file_path = 'your_data.csv'
+`file_path = 'your_data.csv'`
 
-output_path = 'cleaned_data.csv'
+`output_path = 'cleaned_data.csv'`
 
-cleaner = DataCleaner(file_path)
+`cleaner = DataCleaner(file_path)`
 
-cleaner.summarize()
+`cleaner.summarize()`
 
-cleaner.clean_data()
+`cleaner.clean_data()`
 
-cleaner.summarize()
+`cleaner.summarize()`
 
-cleaner.save(output_path)`
+`cleaner.save(output_path)`
 
 
