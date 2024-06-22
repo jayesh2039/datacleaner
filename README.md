@@ -14,10 +14,6 @@ Before using the library, you need to install it. If you have cloned the reposit
 
 `pip install .`
 
-Alternatively, if the library is available on PyPI, you can install it directly from there:
-
-`pip install datacleaner`
-
 Step 2: Import the Library
 After installation, you need to import the DataCleaner class from the library in your Python script.
 
