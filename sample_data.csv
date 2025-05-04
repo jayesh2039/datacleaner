@@ -1,0 +1,11 @@
+id,name,age,city,salary
+1,John,28.0,New York,50000.0
+2,Jane,32.0,,60000.0
+3,Tom,,Los Angeles,70000.0
+4,Mary,25.0,Chicago,65000.0
+5,John,28.0,New York,50000.0
+6,Anna,29.0,Boston,
+7,Peter,35.0,,90000.0
+8,,40.0,New York,95000.0
+9,Paul,22.0,Los Angeles,45000.0
+10,,30.0,,80000.0
